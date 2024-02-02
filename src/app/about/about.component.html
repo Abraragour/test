@@ -1,0 +1,31 @@
+<!-- <table class="w-100 mx-auto text-center">
+    <thead class="bg-primary   text-white border-white border-3">
+        <th class="border-white border-3">img</th>
+        <th class="border-white border-3">title</th>
+        <th class="border-white border-3">description</th>
+        <th class="border-white border-3">price</th>
+    </thead>
+    <tbody class="bg-primary text-white">
+   <tr *ngFor="let product of AllProducts" class="border-white border-3">
+    <td class="border-white border-3"><img [src]="product.imgpath"></td>
+      <td  class="border-white border-3 border-white border-3">{{product.title}}</td>
+      <td class="border-white border-3">{{product.description}}</td>
+      <td class="border-white border-3">{{product.price}}</td>
+   </tr>
+    </tbody>
+</table> -->
+
+ <div class="container py-4 ">
+    <div class="row g-3">
+        <div *ngFor="let product of AllProducts"class="col-md-3 col-sm-6">
+            <div class="item overflow-hidden position-relative border border-danger">
+                <img [src]="product.imgpath">
+                <div class="text-center">
+                    <h2 >{{product.title}}</h2>
+                    <h3>{{product.description}}</h3>
+                    <h4>{{product.price}}</h4>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div> 
